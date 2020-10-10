@@ -1,6 +1,6 @@
 # common.mk
 
-SHELL = /bin/bash
+SHELL = /bin/sh
 .DEFAULT_GOAL := help
 
 # ref: https://marmelab.com/blog/2016/02/29/auto-documented-makefile.html
