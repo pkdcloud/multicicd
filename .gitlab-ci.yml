@@ -6,15 +6,9 @@ services:
 
 stages:
     - build
-    - publish
 
 build:
     stage: build
     script:
         - ls -la
-        - make docker-build
-
-publish:
-    stage: publish
-    script: 
         - make docker-publish
