@@ -1,0 +1,8 @@
+default:
+    image: cmdlabs/musketeers
+
+build:
+    script: make docker-build
+
+publish:
+    script: make docker-publish
