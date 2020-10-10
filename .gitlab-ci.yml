@@ -1,8 +1,14 @@
 default:
     image: cmdlabs/musketeers
 
+services:
+    - docker:dind
+
 build:
-    script: make docker-build
+    script:
+        - ls -la
+        - make docker-build
 
 publish:
-    script: make docker-publish
+    script: 
+        - make docker-publish
